@@ -1,0 +1,78 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Bectes Script Hub (Doors Edition)", "Synapse")
+ 
+ 
+local Main = Window:NewTab("Scripts")
+local MainSection = Main:NewSection("Scripts")
+ 
+ 
+MainSection:NewButton("Infinite Yield", "FE Admin Script", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true))()
+end)
+ 
+ 
+--LOCAL PLAYER
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Movement")
+ 
+PlayerSection:NewSlider("WalkSpeed", "Go Fast", 500, 16, function(s) -- 500 (MaxValue) | 16 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+ 
+PlayerSection:NewSlider("JumpPower", "Jump High", 350, 50, function(s) -- 350 (MaxValue) | 50 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+ 
+ 
+--Main Scripts
+MainSection:NewButton("Poopdoors", "Poopdoors", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+end)
+ 
+MainSection:NewButton("Vynixius", "Vynixius", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Loader.lua"))()
+end)
+ 
+MainSection:NewButton("Floor 2", "Floor 2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iCherryKardes/Doors/main/Floor%202%20Mod"))()
+end)
+
+MainSection:NewButton("Entity Repicator", "Entity Replicator", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/ce685220a0182bb155c5562fc78420d7d99fe3f8/source.lua")()
+end)
+
+MainSection:NewButton("Anti AFK", "Anti AFK", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/sDXcYFhR", true))()
+end)
+ 
+MainSection:NewButton("Plamens", "Plamens", function()
+    print("loadstring(game:HttpGet('https://raw.githubusercontent.com/plamen6789/DoorsEntitySummonerGUI/main/EntityGUI'))()")
+end)
+ 
+MainSection:NewButton("King", "King", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv")))()
+end)
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+--Client side Script Section
+local Client = Window:NewTab("Client Side Scripts")
+local ClientSection = Client:NewSection("Scripts")
+ClientSection:NewButton("Nightmare Sans", "Turn into Nightmare Sans", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/SfcCjvRx"))()
+end)
+ 
+ 
+ 
+ 
+--Credits
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Created by: Becte")
+local CreditsSection = Credits:NewSection("Discord: Becte#3709")
+local CreditsSection = Credits:NewSection("Doorsified by: Rxptor")
+local CreditsSection = Credits:NewSection("Discord: RxptorX#8179")
